@@ -47,50 +47,54 @@ function App() {
       </section>
 
       {/* 2-Секция */}
-      <section className="w-full min-h-[70vh] flex items-center">
-        <div className="w-[85%] mx-auto px-4 sm:px-6 lg:px-[100px] grid md:grid-cols-2 items-center gap-10">
+<section className="w-full min-h-[70vh] flex items-center">
+  <div className="w-[85%] mx-auto px-4 sm:px-6 lg:px-[100px] grid md:grid-cols-2 items-center gap-10">
 
-          <div className="flex justify-center w-full max-w-[375px] mx-auto">
-            <img src={heroImg2} alt="hero" className="h-auto" />
-          </div>
+    {/* ВЕРХНЯЯ (только ≥768px) */}
+    <div className="hidden md:flex justify-center md:justify-start w-full max-w-[375px] mx-auto md:mx-0">
+      <img src={heroImg2} alt="hero" className="h-auto" />
+    </div>
 
-          <div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-normal text-[#112945] leading-tight">
-              Save on your own <br /> terms
-            </h1>
+    <div>
+      <h1 className="text-4xl sm:text-5xl lg:text-7xl font-normal text-[#112945] leading-tight">
+        Save on your own <br /> terms
+      </h1>
 
-            <p className="mt-4 text-gray-500 text-lg sm:text-xl lg:text-2xl">
-              Savings give you financial <br /> options
-            </p>
+      <p className="mt-4 text-gray-500 text-lg sm:text-xl lg:text-2xl">
+        Savings give you financial <br /> options
+      </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
+      <div className="flex flex-col sm:flex-row gap-4 mt-6">
+        <button className="bg-[#EEEAFF] w-full sm:w-[200px] px-5 py-3 rounded-lg hover:scale-105 transition cursor-pointer text-left">
+          <p className="text-sm text-[#545659]">Get it on</p>
+          <h2 className="text-[#582EFF] font-bold text-lg">Play Market</h2>
+        </button>
 
-              <button className="bg-[#EEEAFF] w-full sm:w-[200px] px-5 py-3 rounded-lg hover:scale-105 transition cursor-pointer text-left">
-                <p className="text-sm text-[#545659]">Get it on</p>
-                <h2 className="text-[#582EFF] font-bold text-lg">Play Market</h2>
-              </button>
+        <button className="bg-black text-white px-5 py-3 rounded-lg hover:scale-105 transition w-full sm:w-[200px] cursor-pointer text-left">
+          <p className="text-sm">Download on the</p>
+          <h2 className="font-bold text-lg">App Store</h2>
+        </button>
+      </div>
+    </div>
 
-              <button className="bg-black text-white px-5 py-3 rounded-lg hover:scale-105 transition w-full sm:w-[200px] cursor-pointer text-left">
-                <p className="text-sm">Download on the</p>
-                <h2 className="font-bold text-lg">App Store</h2>
-              </button>
+    {/* НИЖНЯЯ (только <768px) */}
+    <div className="flex md:hidden justify-center w-full max-w-[375px] mx-auto">
+      <img src={heroImg2} alt="hero" className="h-auto" />
+    </div>
 
-            </div>
-          </div>
-
-        </div>
-      </section>
+  </div>
+</section>
 
       {/* 3-секция */}
       <section className="w-full min-h-[70vh] flex flex-col items-center py-10">
 
-        <h1 className="font-normal text-4xl sm:text-5xl lg:text-7xl text-[#112945] text-center">
+        <h1 className="font-normal text-4xl sm:text-5xl lg:text-7xl text-[#112945] text-center mb-15">
           How it works
         </h1>
 
         <div className="w-[85%] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-30">
 
-          <div className="bg-white h-auto lg:h-[400px] w-full lg:w-[350px] shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition border-t-[12px] border-[#582EFF]">
+          <div className="bg-white h-auto lg:h-[400px] w-full lg:w-[350px] shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition border-t-[12px] border-[#582EFF] ">
             <img src={png2} alt="" className="w-[73px] h-[80px] mb-4" />
             <div>
               <h2 className="text-xl font-semibold mb-2">Set up an account</h2>
@@ -122,6 +126,12 @@ function App() {
 
         </div>
       </section>
+<div className="fixed top-1/2 left-5 -translate-y-1/2 z-50">
+  <button className="bg-[#31C5A1] text-white px-4 py-3 rounded-r-xl shadow-lg 
+  rotate-[-90deg] origin-left hover:scale-105 transition">
+    Contact us
+  </button>
+</div>
 
       <Footer />
     </main>

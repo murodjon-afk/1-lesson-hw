@@ -1,23 +1,21 @@
-import logo from '../assets/logo.png'
+import logo from '../../public/logo.png'
 
 export default function Header() {
     return (
         <header className="w-full text-[#112945] flex items-center justify-between 
-        px-4 sm:px-8 md:px-16 lg:px-[200px] py-4">
+        px-4 sm:px-8 md:px-16 lg:px-50 py-4">
 
-            {/* LOGO */}
             <div className='flex items-center gap-2 cursor-pointer'>
                 <img 
                     src={logo} 
                     alt="logo" 
-                    className="w-10 h-10 sm:w-12 sm:h-12 md:w-[50px] md:h-[50px]" 
+                    className="w-10 h-10 sm:w-12 sm:h-12 md:w-12.5 md:h-12.5" 
                 />
                 <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>
                     irorun
                 </h1>
             </div>
 
-            {/* NAV */}
             <nav className="
                 hidden sm:flex 
                 gap-4 md:gap-6 

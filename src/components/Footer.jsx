@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../../public/logo.png'
 
 export default function Footer() {
   return (
@@ -13,12 +13,12 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row gap-4">
 
-          <button className="bg-white w-[200px] px-5 py-3 rounded-lg hover:scale-105 transition cursor-pointer text-left">
+          <button className="bg-white w-50 px-5 py-3 rounded-lg hover:scale-105 transition cursor-pointer text-left">
             <p className="text-sm text-[#31C5A1]">Get it on</p>
             <h2 className="text-[#31C5A1] font-bold text-lg">Play Market</h2>
           </button>
 
-          <button className="bg-black text-white px-5 py-3 rounded-lg hover:scale-105 transition w-[200px] cursor-pointer text-left">
+          <button className="bg-black text-white px-5 py-3 rounded-lg hover:scale-105 transition w-50 cursor-pointer text-left">
             <p className="text-sm">Download on the</p>
             <h2 className="font-bold text-lg">App Store</h2>
           </button>
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-[#112945] mb-3">
+            <h3 className="font-semibold text-[#112945] mb-3   ">
               Powered by YesCredit Limited.
             </h3>
             <p>
